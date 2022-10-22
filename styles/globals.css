@@ -27,3 +27,12 @@ a {
     background: black;
   }
 }
+
+@layer components {
+  .card {
+    @apply mt-4 shadow-md;
+  }
+  .primary-button {
+    @apply px-3 py-1 bg-amber-300 rounded border-none focus:bg-amber-500;
+  }
+}
