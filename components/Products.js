@@ -1,6 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
 import Link from 'next/link';
-import React from 'react';
 
 const products = ({ product }) => {
     const { slug, image, name, rating, brand, price } = product;
@@ -11,13 +10,13 @@ const products = ({ product }) => {
                     <img
                         src={image}
                         alt={slug}
-                        className='rounded-md shadow-inner shadow-md'
+                        className='rounded-md shadow-inner'
                     />
                 </a>
             </Link>
             <div className='p-3'>
                 <Link href={`/product/${slug}`}>
-                    <h2 className='text-lg text-purple-600'>{name}</h2>
+                    <h2 className='text-lg text-purple-600 cursor-pointer'>{name}</h2>
                 </Link>
                 <h3>{rating}</h3>
                 <h4 className=''>{brand}</h4>

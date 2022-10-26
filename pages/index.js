@@ -15,3 +15,26 @@ export default function Home() {
     </div>
   )
 }
+
+
+// const Home = () => {
+//   return (
+//     <div>
+//       Enter
+//     </div>
+//   );
+// }
+
+// export const getStaticProps = async () => {
+//   const response = await fetch(data)
+//   const datas = await response.json()
+//   console.log(datas);
+
+//   return {
+//     props: {
+//       product: datas,
+//     }
+//   }
+// }
+
+// export default Home;
